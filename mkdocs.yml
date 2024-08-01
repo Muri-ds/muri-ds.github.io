@@ -1,6 +1,7 @@
 site_name: Документация Muri
 site_url: https://muri-docs.gizuhub.ru
 copyright: "&copy; 2024 Muri. Все права защищены"
+site_description: Документация для Discord бота Muri и его API
 
 theme:
   name: material
@@ -49,6 +50,22 @@ extra:
       Мы используем cookie для улучшения взаимодействия с документацией. Вы можете отключить их в любой момент в настройках браузера.
     actions:
       - accept
+  analytics:
+    provider: google
+    property: G-RJJ9WZVGD6
+    feedback:
+      title: Страница была полезной?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Страница была полезной
+          data: 1
+          note: >-
+            Спасибо за обратную связь!
+        - icon: material/emoticon-sad-outline
+          name: Лучше бы улучшить страницу
+          data: 0
+          note: >-
+            Спасибо за обратную связь! Примем это во внимание.
 
 markdown_extensions:
   - admonition
@@ -63,7 +80,10 @@ markdown_extensions:
   - pymdownx.emoji
 
 nav:
-  - Главная: index.md
+  - Главная:
+      - Добро пожаловать: index.md
+      - Как пригласить бота: invite.md
+      - ЧАВО: faq.md
   - Работа с API:
       - Скоро: api/index.md
   - Правовая информация:
