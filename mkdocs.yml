@@ -1,0 +1,83 @@
+site_name: Документация Muri
+site_url: https://muri-docs.gizuhub.ru
+copyright: "&copy; 2024 Muri. Все права защищены"
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.path
+    - navigation.tabs
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Переключить на светлую тему
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на темную тему
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на системную тему
+
+plugins:
+  - offline
+  - search
+  - social:
+      cards_layout_dir: layouts
+      cards_layout: card
+      debug: true
+
+extra:
+  generator: false
+  consent:
+    title: Мы используем печеньки 🍪
+    description: >-
+      Мы используем cookie для улучшения взаимодействия с документацией. Вы можете отключить их в любой момент в настройках браузера.
+    actions:
+      - accept
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - pymdownx.emoji
+
+nav:
+  - Главная: index.md
+  - Работа с API:
+      - Скоро: api/index.md
+  - Правовая информация:
+      - Условия использования: legal/terms.md
+      - Политика конфиденциальности: legal/privacy.md
+      - Публичная оферта: legal/oferta.md
+  - Список изменений:
+      - Текущее обновление: changelog/index.md
+      - Архив обновлений:
+          - Обновление 0.1.7: changelog/0-1-7.md
+          - Обновление 0.1.6: changelog/0-1-6.md
+          - Обновление 0.1.5: changelog/0-1-5.md
+          - Обновление 0.1.4: changelog/0-1-4.md
+          - Обновление 0.1.3: changelog/0-1-3.md
+          - Обновление 0.1.2: changelog/0-1-2.md
+          - Обновление 0.1.1: changelog/0-1-1.md
+  - Поддержка: "https://discord.gg/edGKDHYXPb"
