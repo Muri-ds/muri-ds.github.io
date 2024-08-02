@@ -77,6 +77,7 @@ extra:
             Спасибо за обратную связь! Примем это во внимание.
 
 markdown_extensions:
+  - tables
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -87,6 +88,11 @@ markdown_extensions:
   - pymdownx.tilde
   - attr_list
   - pymdownx.emoji
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Главная:
@@ -94,7 +100,12 @@ nav:
       - Как пригласить бота: invite.md
       - ЧАВО: faq.md
   - Работа с API:
-      - Скоро: api/index.md
+      - Добро пожаловать: api/index.md
+      - Методы:
+          - GET /v1/booru: api/methods/get-booru.md
+      - Объекты:
+          - BooruPost: api/objects/booru-post.md
+          - BooruFile: api/objects/booru-file.md
   - Правовая информация:
       - Условия использования: legal/terms.md
       - Политика конфиденциальности: legal/privacy.md
