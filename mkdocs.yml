@@ -6,7 +6,6 @@ site_description: Документация для Discord бота Muri и ег�
 theme:
   name: material
   language: ru
-  custom_dir: overrides
   features:
     - announce.dismiss
     - navigation.instant
