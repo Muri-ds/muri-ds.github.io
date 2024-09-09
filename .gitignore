@@ -1,2 +1,2 @@
-.cache
-venv
+.vitepress/cache
+node_modules
