@@ -3,7 +3,6 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "ru-RU",
-  srcDir: "./docs",
   title: "Докумантация Muri",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   description: "Документация по использованию бота Muri.",
